@@ -53,7 +53,7 @@ def home():
 
 
 def finds(img_path, model):
-    img = load_img(img_path, target_size=(256, 256))
+    img = load_img(img_path, target_size=(128, 128))
     x = img_to_array(img)
     # x = np.true_divide(x, 255)
     x = np.expand_dims(x, axis=0)
