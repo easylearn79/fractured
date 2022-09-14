@@ -12,7 +12,6 @@ from tensorflow.keras.models import load_model
 from flask import Flask , render_template  , request , send_file
 from tensorflow.keras.models import Sequential, model_from_json
 from tensorflow.keras.preprocessing.image import load_img , img_to_array
-import keras
 from keras.preprocessing import image
 from keras.preprocessing.image import ImageDataGenerator
 from keras.applications.imagenet_utils import preprocess_input, decode_predictions
