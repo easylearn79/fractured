@@ -80,10 +80,13 @@ def upload_file():
         
         pred_class = preds.argmax(axis=-1)
         
-        pred_class = int(pred_class)
-        classes ={0: "Fractured", 1: "UnFractured"}
+        if preds [0][0] == 1:
+            prediction = 'UnFractured'
+        else:
+            prediction = 'Fractured'
+                    
 
-        return str("The image is classified as: "+str(classes[pred_class]))
+        return str("The image is classified as: "+ prediction )
 
     return None
 
